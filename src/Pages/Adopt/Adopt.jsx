@@ -31,7 +31,7 @@ const Adopt = () => {
       console.log("Fetching pet with ID:", id);  // Log the ID
       try {
         // Fetch pet details using the ID from the URL
-        const res = await axios.get(`http://localhost:5000/api/pets/${id}`);
+        const res = await axios.get(`https://pawpal-backend-06o7.onrender.com/api/pets/${id}`);
         setPet(res.data);  // Set pet data
         setLoading(false);  // Set loading to false after the data is fetched
       } catch (err) {
@@ -80,7 +80,7 @@ const Adopt = () => {
         }
 
         // Update pet as adopted in the database
-        await axios.put(`http://localhost:5000/api/pets/adopt/${pet._id}`, null, {
+        await axios.put(`https://pawpal-backend-06o7.onrender.com/api/pets/adopt/${pet._id}`, null, {
           headers: { Authorization: `Bearer ${token}` },
         });
 

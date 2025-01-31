@@ -73,7 +73,7 @@ const PetForm = () => {
     data.append('userId', userId);  // Attach userId
 
     try {
-      const response = await axios.post('http://localhost:5000/api/pets', data, {
+      const response = await axios.post('https://pawpal-backend-06o7.onrender.com/api/pets', data, {
         headers: {
           Authorization: `Bearer ${token}`,
           'Content-Type': 'multipart/form-data',

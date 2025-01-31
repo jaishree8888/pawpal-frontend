@@ -43,7 +43,7 @@ const PetList = () => {
   useEffect(() => {
     const fetchPets = async () => {
       try {
-        const res = await axios.get("http://localhost:5000/api/pets");
+        const res = await axios.get("https://pawpal-backend-06o7.onrender.com/api/pets");
         setPets(res.data);
         setFilteredPets(res.data);
       } catch (err) {
@@ -92,7 +92,7 @@ const PetList = () => {
         updatedPet.append("image", pet.image);
       }
 
-      await axios.put(`http://localhost:5000/api/pets/${pet._id}`, updatedPet, {
+      await axios.put(`https://pawpal-backend-06o7.onrender.com/api/pets/${pet._id}`, updatedPet, {
         headers: {
           Authorization: `Bearer ${token}`,
           "Content-Type": "multipart/form-data",
@@ -120,7 +120,7 @@ const PetList = () => {
         return;
       }
 
-      await axios.delete(`http://localhost:5000/api/pets/${pet._id}`, {
+      await axios.delete(`https://pawpal-backend-06o7.onrender.com/api/pets/${pet._id}`, {
         headers: { Authorization: `Bearer ${token}` },
       });
 

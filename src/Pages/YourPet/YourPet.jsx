@@ -48,7 +48,7 @@ const YourPet = () => {
   useEffect(() => {
     const fetchPets = async () => {
       try {
-        const res = await axios.get("http://localhost:5000/api/pets");
+        const res = await axios.get("https://pawpal-backend-06o7.onrender.com/api/pets");
         // Filter pets by userId
         const petsByUser = res.data.filter((pet) => pet.seller === userId);  // Match the pet seller with the logged-in userId
         setUserPets(petsByUser);
@@ -88,7 +88,7 @@ const YourPet = () => {
         return;
       }
 
-      await axios.delete(`http://localhost:5000/api/pets/${id}`, {
+      await axios.delete(`https://pawpal-backend-06o7.onrender.com/api/pets/${id}`, {
         headers: { Authorization: `Bearer ${token}` },
       });
       alert("Pet deleted successfully!");
@@ -113,7 +113,7 @@ const YourPet = () => {
         return;
       }
 
-      await axios.put(`http://localhost:5000/api/pets/${id}`, updatedPet, {
+      await axios.put(`https://pawpal-backend-06o7.onrender.com/api/pets/${id}`, updatedPet, {
         headers: { Authorization: `Bearer ${token}` },
       });
 
