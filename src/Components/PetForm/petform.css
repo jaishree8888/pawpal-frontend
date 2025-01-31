@@ -1,0 +1,111 @@
+/* petform.css */
+
+.pet-form {
+  width: 100%;
+  max-width: 500px;
+  height: 570px;
+  margin: 50px auto;
+  margin-top: 200px;
+  padding: 30px;
+  background-color: #fffbf2; /* Soft background color */
+  border: 2px solid #f0b300; /* Warm border color */
+  border-radius: 10px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  font-family: 'Arial', sans-serif;
+}
+
+.pet-form h2 {
+  text-align: center;
+  color: #f07b4f; /* Warm orange color */
+  font-size: 30px;
+  margin-bottom: 20px;
+  font-weight: bold;
+  font-family: 'Georgia', serif;
+}
+
+.pet-form input[type="text"],
+.pet-form input[type="number"],
+.pet-form textarea,
+.pet-form input[type="file"] {
+  width: 100%;
+  padding: 12px;
+  height: 30px;
+  margin-bottom: 20px;
+  border: 1px solid #f0b300;
+  border-radius: 8px;
+  font-size: 16px;
+  font-family: 'Arial', sans-serif;
+  box-sizing: border-box;
+  background-color: #fff9e5; 
+}
+
+.pet-form input[type="file"] {
+  padding: 8px;
+}
+
+.pet-form textarea {
+  resize: vertical;
+  height: 120px;
+}
+
+.pet-form button {
+  width: 100%;
+  padding: 14px;
+  background-color: #f07b4f; /* Warm orange button */
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-size: 18px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  font-family: 'Arial', sans-serif;
+}
+
+.pet-form button:hover {
+  background-color: #e56a3b; /* Slightly darker on hover */
+}
+
+.pet-form input:focus,
+.pet-form textarea:focus {
+  outline: none;
+  border-color: #f07b4f;
+  box-shadow: 0 0 8px rgba(240, 179, 0, 0.4); /* Orange glow */
+}
+
+.pet-form input[type="file"]:focus {
+  border-color: #f07b4f;
+  box-shadow: 0 0 8px rgba(240, 179, 0, 0.4);
+}
+
+/* Add some space and a little padding for a cozy feel */
+.pet-form label {
+  font-size: 16px;
+  color: #6b4f1d;
+  font-weight: bold;
+  margin-bottom: 8px;
+  display: block;
+}
+
+/* Responsive Design for smaller devices */
+@media (max-width: 600px) {
+  .pet-form {
+    margin: 20px;
+    padding: 20px;
+  }
+
+  .pet-form h2 {
+    font-size: 24px;
+  }
+
+  .pet-form input[type="text"],
+  .pet-form input[type="number"],
+  .pet-form textarea,
+  .pet-form input[type="file"] {
+    font-size: 14px;
+  }
+
+  .pet-form button {
+    font-size: 16px;
+  }
+}

@@ -1,0 +1,175 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+  }
+  
+  /* Container for your pets page */
+  .your-pets-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Heading */
+  .your-pets-container h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    text-align: center;
+    color: #333;
+  }
+  
+  /* Pet list container */
+  .pet-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+  }
+  
+  /* Individual pet card */
+  .pet-card {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    width: 250px;
+    padding: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+  }
+  
+  .pet-card:hover {
+    transform: scale(1.05);
+  }
+  
+  /* Pet name */
+  .pet-card h3 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+    color: #2c3e50;
+  }
+  
+  /* Pet image */
+  .pet-image {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    margin-bottom: 10px;
+  }
+  
+  /* Pet details */
+  .pet-card p {
+    font-size: 0.9rem;
+    color: #555;
+    margin-bottom: 10px;
+  }
+  
+  .pet-card p strong {
+    font-weight: bold;
+    color: #333;
+  }
+  
+  /* Seller actions (Edit and Delete buttons) */
+  .seller-actions {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 15px;
+  }
+  
+  .update-btn, .delete-btn {
+    background-color: #3498db;
+    color: white;
+    border: none;
+    padding: 8px 16px;
+    font-size: 0.9rem;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .update-btn:hover, .delete-btn:hover {
+    background-color: #2980b9;
+  }
+  
+  .delete-btn {
+    background-color: #e74c3c;
+  }
+  
+  .delete-btn:hover {
+    background-color: #c0392b;
+  }
+  
+  /* Edit Form Styles */
+  .edit-form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+  
+  .edit-form input, .edit-form textarea {
+    padding: 8px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    font-size: 1rem;
+    width: 100%;
+  }
+  
+  .edit-form button {
+    background-color: #2ecc71;
+    color: white;
+    padding: 10px 20px;
+    font-size: 1rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .edit-form button:hover {
+    background-color: #27ae60;
+  }
+  
+  /* Cancel button */
+  .edit-form button.cancel-btn {
+    background-color: #e74c3c;
+  }
+  
+  .edit-form button.cancel-btn:hover {
+    background-color: #c0392b;
+  }
+  
+  /* Message for no pets */
+  .pet-list p {
+    font-size: 1.2rem;
+    color: #777;
+    text-align: center;
+    margin-top: 20px;
+  }
+  
+  /* Media Queries for Responsiveness */
+  @media (max-width: 768px) {
+    .pet-list {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .pet-card {
+      width: 80%;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .your-pets-container {
+      padding: 10px;
+    }
+  
+    .pet-card {
+      width: 100%;
+    }
+  }
+  

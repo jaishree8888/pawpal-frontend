@@ -1,0 +1,158 @@
+/* Main container */
+.adopt-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    /* background: linear-gradient(135deg, #ffecd2, #fcb69f); */
+    padding: 20px;
+  }
+  
+  /* Card layout for pet details */
+  .adopt-card {
+    display: flex;
+    background: white;
+    border-radius: 12px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.15);
+    overflow: hidden;
+    max-width: 800px;
+    width: 100%;
+  }
+  
+  /* Left side: Pet Image */
+  .pet-image-section {
+    flex: 1;
+    overflow: hidden;
+  }
+  
+  .pet-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  
+  /* Right side: Pet Info */
+  .pet-info-section {
+    flex: 1;
+    padding: 20px;
+    text-align: left;
+  }
+  
+  .pet-info-section h2 {
+    font-size: 26px;
+    color: #333;
+    margin-bottom: 10px;
+  }
+  
+  .pet-info-section p {
+    font-size: 18px;
+    color: #555;
+    margin: 5px 0;
+  }
+  
+  /* Seller info section */
+  .seller-info {
+    margin-top: 20px;
+    padding: 15px;
+    background: #f9f9f9;
+    border-radius: 8px;
+  }
+  
+  .seller-info h3 {
+    margin-bottom: 10px;
+    font-size: 20px;
+    color: #222;
+  }
+  
+  /* Contact button */
+  .contact-button {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    margin-top: 10px;
+    background: #ff7b54;
+    color: white;
+    font-size: 16px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background 0.3s ease-in-out;
+  }
+  
+  .contact-button:hover {
+    background: #ff5722;
+  }
+  
+  /* Modal Styling */
+  .modal-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .modal-content {
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    text-align: center;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+  }
+  
+  .modal-content h3 {
+    margin-bottom: 10px;
+  }
+  
+  .call-button {
+    display: inline-block;
+    margin-top: 10px;
+    padding: 10px 15px;
+    background: #4caf50;
+    color: white;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .call-button:hover {
+    background: #388e3c;
+  }
+  
+  .close-button {
+    display: inline-block;
+    margin-top: 10px;
+    padding: 10px 15px;
+    background: #d32f2f;
+    color: white;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-left: 10px;
+  }
+  
+  .close-button:hover {
+    background: #b71c1c;
+  }
+  
+  /* Responsive design */
+  @media (max-width: 768px) {
+    .adopt-card {
+      flex-direction: column;
+    }
+  
+    .pet-image {
+      height: 250px;
+    }
+  
+    .pet-info-section {
+      text-align: center;
+    }
+  }
+  
